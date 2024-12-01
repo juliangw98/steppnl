@@ -1,0 +1,513 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:24px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto auto;
+    margin-bottom: 120px;
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0 0; 
+    
+}
+
+.header .logo-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+.header .logo {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.header .address {
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    padding: 16px 24px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #09003C;
+    color: #f9f9f9;
+    border: none;
+}
+
+/* Hero Image */
+.hero-image {
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+
+}
+
+.hero-image img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: left;
+    color: #09003C;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap:24px ;
+
+}
+
+.quote-section .newInTown{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.8;
+    color: #09003C;
+}
+
+.quote-section h1 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -4px;
+    font-weight: 800;
+}
+
+.quote-section p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #09003C;
+}
+
+/*socials */
+.socials-container{
+    background-color: #09003C;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.socials{
+    padding: 160px 80px;
+    flex: 1;
+}
+
+.socials h1{
+    margin: 0;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -4px;
+    font-weight: 800;
+    color:#D0FDFF ;
+    margin-bottom: 40px;
+}
+.socials p{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #D0FDFF;
+}
+
+.socials a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    padding: 16px 24px;
+    text-align: center;
+    border-radius: 100px;
+    background-color:#D0FDFF;
+    color: #09003C;
+    border: none;
+}
+.cta{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.social_image{
+    background-image:url(Images/social.png);
+    background-position: right;
+    background-size: cover;
+    flex: 1;
+}
+
+/* Opening Hours */
+
+.opening-hours-container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.company{
+    background-image: url(Images/company.png);
+    background-position: right;
+    background-size: cover;
+    flex: 1;
+    border-radius: 16px;
+
+
+}
+
+.opening-hours {
+    background-color: #D0FDFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 64px;
+
+}
+
+.opening-hours h2 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #09003C;
+    margin-bottom: 15px;
+}
+
+.opening-hours ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    font-size:32px;
+    font-weight: 600; /* Semi-bold */
+    color: #09003C;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(9, 0, 60, 0.1); /* 10% opacity */
+    width:100%;
+}
+
+.opening-hours .day {
+    text-align: left;
+}
+
+.opening-hours .hours {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+
+    .quote-section {
+        text-align: left;
+        color: #09003C;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width:60%;
+    
+    }
+
+
+    .socials-container{
+        background-color: #09003C;
+        border-radius: 16px;
+        display: flex;
+        margin-bottom: 0px;
+        gap:0px
+    }
+    
+    .socials{
+        padding: 64px 64px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .socials h1{
+        margin: 0;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -4px;
+        font-weight: 800;
+        color:#D0FDFF ;
+        margin-bottom: 40px;
+    }
+    .socials p{
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.8;
+        color: #D0FDFF;
+    }
+    
+    .socials a{
+        font-weight: 400;
+        font-size: 16px;
+        color: #555;
+        padding: 16px 24px;
+        text-align: center;
+        border-radius: 100px;
+        background-color:#D0FDFF;
+        color: #09003C;
+        border: none;
+    }
+    
+    .social_image{
+        background-image:url(Images/social.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex: 1;
+    }
+    .opening-hours-container{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+    }
+
+    .opening-hours {
+        padding: 24px; /* Reduced padding for tablets */
+    }
+
+    .quote-section h1 {
+        font-size: 50px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
+    }
+
+    .opening-hours h2 {
+        font-size: 50px;
+    }
+
+    .opening-hours li {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+
+    .quote-section {
+        text-align: left;
+        color: #09003C;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width:80%;
+    
+    }
+
+    .socials-container{
+        background-color: #09003C;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .socials{
+        padding: 64px 64px;
+    }
+    
+    .socials h1{
+        margin: 0;
+        font-size: 56px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -4px;
+        font-weight: 800;
+        color:#D0FDFF ;
+        margin-bottom: 40px;
+    }
+    .socials p{
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.8;
+        color: #D0FDFF;
+    }
+    
+    .socials a{
+        font-weight: 400;
+        font-size: 16px;
+        color: #555;
+        padding: 16px 24px;
+        text-align: center;
+        border-radius: 100px;
+        background-color:#D0FDFF;
+        color: #09003C;
+        border: none;
+    }
+    .cta{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .social_image{
+        background-image:url(Images/social.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex: 1;
+        height: 30vh;
+    }
+    
+
+    .opening-hours {
+        padding: 64px 64px;    }
+
+    .quote-section h1 {
+        font-size: 50px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
+    }
+
+    .opening-hours h2 {
+        font-size: 50px;
+        font-weight: 900;
+        color: #09003C;
+        margin-bottom: 15px;
+        letter-spacing: -2px;
+    
+    }
+
+    .opening-hours li {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 675px) {
+
+    .hero-image img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+
+    .quote-section {
+        text-align: left;
+        color: #09003C;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width:100%;
+    
+    }
+    .quote-section h1 {
+        margin: 0;
+        font-size: 80px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        font-weight: 800;
+    }
+
+    .socials-container{
+        background-color: #09003C;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .socials{
+        padding: 32px 32px;
+    }
+    
+    .socials h1{
+        margin: 0;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        font-weight: 800;
+        color:#D0FDFF ;
+        margin-bottom: 40px;
+    }
+    .socials p{
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.8;
+        color: #D0FDFF;
+    }
+    
+    .socials a{
+        font-weight: 400;
+        font-size: 16px;
+        color: #555;
+        padding: 16px 24px;
+        text-align: center;
+        border-radius: 100px;
+        background-color:#D0FDFF;
+        color: #09003C;
+        border: none;
+    }
+    .social_image{
+        background-image:url(Images/social.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex: 1;
+        height: 30vh;
+    }
+    .quote-section {
+        gap:16px ;
+    
+    }
+    .opening-hours {
+        padding: 32px; /* Reduced padding for mobile */
+    }
+
+    .quote-section h1 {
+        font-size: 32px;
+        letter-spacing: -2px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
+    }
+    .opening-hours h2 {
+        font-size: 32px;
+        font-weight: 900;
+        color: #09003C;
+        margin-bottom: 15px;
+        letter-spacing: -2px;
+    
+    }
+
+    .opening-hours li {
+        font-size: 16px;
+    }
+}
